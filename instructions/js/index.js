@@ -23,7 +23,7 @@ messageForm.addEventListener("submit", myFunction);
 //creating callback function
 function myFunction(){
 event.preventDefault();
-const eventTarget = event.target ;//event is the submit;  target is the form
+const eventTarget = event.target ;//event is the submit;  target is the form.
 const firstInput = eventTarget.querySelector('input[name="name"]');
 console.log(firstInput.value);
 const secondInput = eventTarget.querySelector('input[type="email"]');
