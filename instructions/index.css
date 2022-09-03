@@ -1,0 +1,164 @@
+
+body {
+    background-color: #bab8e9;
+    color: rgb(27, 3, 73);
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 10px;
+    padding: 5px;
+  }
+
+  label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+  }
+
+  body h1 {
+    text-align: center;
+    font-size: 46px;
+    font-weight: bold;
+    border: thick double #1f0349;
+    background-color: #593ceb;
+
+  }
+  h2 {
+    font-size: 28px;
+    font-weight: 400;
+    color:rgb(27, 3, 73);
+    border: thick double #1f0349;;
+    background-color: #313ec5;
+  }
+  .section {
+    color:#3e021b
+  } 
+  #skills {
+    border: double;
+    background-color: rgb(229, 199, 245);
+  }
+  #skillset {
+    border: double;
+    background-color: rgb(229, 199, 245);
+  }
+  .form td {
+    font-size: medium;
+    color:#984482;
+    background-color: aqua;
+    margin: auto;
+    padding: auto;
+  }
+  #submit-button {
+    background-color: rgb(235, 228, 255);
+    font-weight: bold;
+    color: black;
+    margin:auto;
+    padding: auto;
+  }
+/* nav bar */
+#navbar {display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0;
+list-style-type: none;
+border: 2px solid black;
+text-align: center;
+background-color: #e0d5e9;
+width: 100%;
+
+}
+#navbar li {display: inline-block;
+  flex: 1 300px;
+  margin: 0;
+  padding: 0;
+}
+#navbar a {
+           color:#6314cb;
+         padding: 10px 15px; 
+           font-weight: bold;
+           display: block;
+            }
+#navbar a:hover {background-color: #e98ee1;}
+
+  .container {
+  row-gap: 20px;
+  column-gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(50px,auto);
+  grid-template-areas: 
+  "header"
+  "nav"
+  "main"
+  "aside"
+  "footer";
+}
+  div button {width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    display: inline-block ;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f8daff;
+    color: white;}
+
+div button:hover{
+         background-color: #d5aad7;
+}
+#messages button {
+  padding: 8px 10px;
+  margin: 8px 0;
+  display: inline-block ;
+  border: 1px solid rgb(68, 63, 164);
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #e0e9e0;
+  color: rgb(59, 56, 56);}
+ 
+ #messages button:hover{
+                      background-color: #b3bab3;
+  }
+ 
+ a:hover {background-color: rgb(246, 190, 228);}
+ a {text-decoration: none;
+     color:#bd0231}
+ 
+ #messages a {font-size: 14px;
+           color: rgb(2, 0, 8);
+          font-weight: bold;}
+  #messages ul {
+    border:rgb(27, 3, 73);
+    background-color: aliceblue;
+    color:#984482;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  #footer {
+    color: blueviolet;
+    text-align: center;
+  } 
+
+@media (min-width: 480px) {
+  .container{grid-template-rows: 100px 100px minmax(200px,auto) minmax(200px,auto) 70px;
+    grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "header header"
+  "nav nav"
+  "main main"
+  "aside ."
+  "footer footer";}
+}
+
+
+@media (min-width: 900px) {
+  .container{grid-template-rows: 100px 100px minmax(200px,auto) 70px;
+    grid-template-columns: 3fr 1fr;
+  grid-template-areas: 
+  "header header"
+  "nav nav"
+  "main aside"
+  "footer footer";}
+}
+
+
